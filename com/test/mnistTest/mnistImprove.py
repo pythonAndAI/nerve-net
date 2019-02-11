@@ -90,7 +90,7 @@ class mnist():
 if __name__ == "__main__":
     print('运算开始时间:',time.strftime('%H:%M:%S', time.localtime()))
     fig = plt.figure(num=3, figsize=(15, 8), dpi=80)
-    mnist = mnist(False, testtype=None, draw=fig)
+    mnist = mnist(True, testtype=None, draw=fig)
     mnist.type_confirm()
     mnist.learn_num()
     mnist.train_num()

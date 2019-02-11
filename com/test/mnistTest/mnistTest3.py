@@ -93,5 +93,6 @@ def test(hiddennodes, learningrate, trainnum):
     return score
 
 if __name__ == "__main__":
-    print(test(100, 0.3, 1))
+    for i in range(10):
+        print("第", i, "次的准确率为:", test(100, 0.3, 1))
 
